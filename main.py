@@ -115,6 +115,26 @@ print(b)
 
 assert a==55 and b==10, "Не поменялось. :("
 
+###Homework from LMS
 
+###Task1
+name = 'Roman'
+day = 'Friday'
+print(f'Good day {name}! {day} is a perfect day to learn some python.')
 
+###Task2
+first_name = 'Roman'
+last_name = 'Stasiv'
+greeting = str('Hello ' + first_name + ' ' + last_name)
+print(greeting)
 
+###Task3
+a = 13
+b = 6
+print(a + b)
+print(a - b)
+print(a / b)
+print(a * b)
+print(a ** b)
+print(a % b)
+print(a // b)
