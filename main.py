@@ -138,3 +138,26 @@ print(a * b)
 print(a ** b)
 print(a % b)
 print(a // b)
+
+###lms02
+###Завдання з картинки
+
+a = 34
+x = 12
+
+y0 = ((2 + x/a)**3)/((x**2+4*a**2+4*a*x)/(8*a**3))
+
+y1 = 8*(2*a+x)
+
+y2 = 8/(x+2*a)
+
+y3 = (x + 2*a)/8
+
+y4 = 1/(8*x+2*a)
+
+print(y0)
+print(y1)
+print(y2)
+print(y3)
+print(y4)
+
