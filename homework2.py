@@ -48,9 +48,10 @@ while True and tries<=3:
     name=input('What is your name?')
     tries+=1
     if name.lower()==user_name:
-        print('Correct name')
+        print(True)
         break
     elif name.lower()!='roman'and tries>=3:
+        print(False)
         print('Please,try again for 3 seconds')
         import time
         time.sleep(3)
