@@ -50,8 +50,8 @@ while True and tries<=3:
     if name.lower()==('roman'):
         print('Correct name')
         break
-    elif name.lower()!=('roman') and tries==4:
-        print('Please,try again later')
+    elif name.lower()!=('roman') and tries>=3:
+        print('Please,try again for 3 seconds')
         import time
         time.sleep(3)
 
