@@ -12,7 +12,7 @@
 ###Use built-in function len() on an input string
 ###Use positive indexing to get the first characters of a string and negative indexing to get the last characters
 
-input_str = 'Hello wold!'
+input_str = 'Hello world!'
 
 if len(input_str) < 2:
     print('')
@@ -26,7 +26,6 @@ else:
 ###Print a suitable message depending on the outcome of the string evaluation.
 
 user_phone_num = input('Your phone number,please')
-
 if user_phone_num.isdigit() and len(user_phone_num) == 10:
     if int(user_phone_num[1:3])==96 or int(user_phone_num[1:3])==67 or int(user_phone_num[1:3])==97:
        print('Your number is valid and it is Kievstar')
