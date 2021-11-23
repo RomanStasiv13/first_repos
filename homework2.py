@@ -12,7 +12,7 @@
 ###Use built-in function len() on an input string
 ###Use positive indexing to get the first characters of a string and negative indexing to get the last characters
 
-input_str = 'Hello world!'
+input_str = input('Write a word,please')
 
 if len(input_str) < 2:
     print('')
@@ -27,7 +27,7 @@ else:
 
 user_phone_num = input('Your phone number,please')
 if user_phone_num.isdigit() and len(user_phone_num) == 10:
-    if int(user_phone_num[1:3])==96 or int(user_phone_num[1:3])==67 or int(user_phone_num[1:3])==97:
+    if int(user_phone_num[1:3])==96 or int(user_phone_num[1:3])==67 or int(user_phone_num[1:3])==97 or int(user_phone_num[1:3])==68:
        print('Your number is valid and it is Kievstar')
 
     elif int(user_phone_num[1:3])==50 or int(user_phone_num[1:3])==95 or int(user_phone_num[1:3])==66:
@@ -50,11 +50,7 @@ while True and tries<=3:
     if name.lower()==user_name:
         print('Correct name')
         break
-    elif name.lower()!='roman' and tries>=3:
+    elif name.lower()!='roman'and tries>=3:
         print('Please,try again for 3 seconds')
         import time
         time.sleep(3)
-
-
-
-
