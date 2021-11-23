@@ -43,13 +43,14 @@ else:
 ###The program should check if your input is equal to the stored name even
 ###if the given name has another case, e.g., if your input is “Anton” and the stored name is “anton”, it should return True.
 tries = 0
+user_name ='roman'
 while True and tries<=3:
     name=input('What is your name?')
     tries+=1
-    if name.lower()==('roman'):
+    if name.lower()==user_name:
         print('Correct name')
         break
-    elif name.lower()!=('roman') and tries>=3:
+    elif name.lower()!='roman' and tries>=3:
         print('Please,try again for 3 seconds')
         import time
         time.sleep(3)
