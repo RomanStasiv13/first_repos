@@ -9,10 +9,10 @@ if __name__ == '__main__':
     import random
 
     tries = 0
-    number = str(random.randint(1, 10))
+    number = (random.randint(1,10))
     print('Hmmmm....Try to guess what number between 1 and 10 I was thinking about :)')
     while tries < 3:
-        guess = str(int(input('Take a guess: ')))
+        guess = int(input('Take a guess: '))
         tries += 1
         if guess < number:
             print('Your guess is too low')
@@ -93,12 +93,23 @@ if __name__ == '__main__':
     ###если человек вводит 30 пишем ему "молодец" и заканчиваем игру.
     ###Если другое число - "ты можешь лучше" и загадываем новое х и новую формулу выбираем.
     import random
-    gen_y = {1:'y=2x+3', 2:'y=3x+15', 3:'y=x+7'}
-    comp_choice = gen[random.randint(1,3)]
-    gen_x = random.randint(0,30)
-    print(f'Enter the answer {comp_choice}, x={gen_x}')
-    answer=''
+    y = {1:'y=2x+3', 2:'y=3x+15', 3:'y=x+7'}
+    comp_choice = y[random.randint(1,3)]
+    x = random.randint(0,30)
+    print(f'Введите ответ {comp_choice}, x={x}')
+    answer=input(str(''))
     if comp_choice==1:
+        2*x+3 == int(answer)
+        print('Молодец!')
+    elif comp_choice==2:
+        3*x+15 == int(answer)
+        print('Молодец!')
+    elif comp_choice==3:
+        x+7== int(answer)
+        print('Молодец!')
+    else:
+        print('Ты можешь лучше!')
+
 
 
 
