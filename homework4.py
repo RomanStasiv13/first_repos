@@ -12,7 +12,7 @@ if __name__ == '__main__':
         if my_list[i] > largest_num:
             largest_num = my_list[i]
         i = i + 1
-    print(largest_num)
+    print(f'Largest number : {largest_num}')
 
     ###Task 2
     ###Exclusive common numbers.
@@ -20,23 +20,15 @@ if __name__ == '__main__':
     ###and make a third list containing the common integers between the 2 initial lists without any duplicates.
     ###Constraints: use only while loop and random module to generate numbers.
 
-    my_list1 = random.sample(range(0,10),10)
-    my_list2 = random.sample(range(0,10),10)
-    total_list=[]
-    print(my_list1)
-    print(my_list2)
-    i1=0
-    i2=0
-    while i1<len(my_list1) and i2<len(my_list2):
-        if my_list1==my_list2:
-            total_list.append(my_list1[i1])
-            i1+=1
-            i2+=1
-        elif my_list1[i1]>my_list2[i2]:
-            i2+=1
-        else:
-            i1+=1
-        print(total_list)
+    my_list1 = random.sample(range(0,10),8)
+    my_list2 = random.sample(range(0,10),6)
+    print(f'First list: {my_list1}')
+    print(f'Second list: {my_list2}')
+    inmylist1 = set(my_list1)
+    inmylist2 = set(my_list2)
+    total_list=list(inmylist1 | inmylist2)
+    print(f'Total list: {total_list}')
+
 
     ###Task 3
     ###Extracting numbers.
