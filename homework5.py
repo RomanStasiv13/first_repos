@@ -44,7 +44,7 @@ if __name__ == '__main__':
     ###List comprehension exercise
     ###Use a list comprehension to make a list containing tuples (i, j)
     ###where `i` goes from 1 to 10 and `j` is corresponding to `i` squared.
-    list_of_tuples = [(i for i in range(1,10)),(j**2 for j in range(1,10))]
 
+    i=range(1,10)
+    list_of_tuples=[(j,pow(j, 2)) for j in i ]
     print(list_of_tuples)
-
