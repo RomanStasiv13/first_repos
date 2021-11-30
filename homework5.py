@@ -4,7 +4,7 @@ if __name__ == '__main__':
     ###and returns a dict containing all unique words as keys and the number of occurrences as values.
     sentence = input('')
     new_dict ={}
-    for word in sentence.lower().split():
+    for word in set(sentence.lower().split()):
         if word not in new_dict:
             new_dict[word] = 1
         else: new_dict[word] +=1
