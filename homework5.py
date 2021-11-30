@@ -39,6 +39,5 @@ if __name__ == '__main__':
     ###Use a list comprehension to make a list containing tuples (i, j)
     ###where `i` goes from 1 to 10 and `j` is corresponding to `i` squared.
 
-    i=range(1,10)
-    list_of_tuples=[(j,pow(j, 2)) for j in i ]
+    list_of_tuples=[(i,pow(i, 2)) for i in range(1,10) ]
     print(list_of_tuples)
