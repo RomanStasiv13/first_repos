@@ -27,20 +27,14 @@ if __name__ == '__main__':
         "orange": 1.5,
         "pear": 3
     }
-    def returnSum(stock):
-        stock_sum=0
-        for i in stock.values():
-            stock_sum = stock_sum + i
-        return stock_sum
-    def returnSum(prices):
-        prices_sum=0
-        for i in prices.values():
-            prices_sum=prices_sum + i
-        return prices_sum
-    print(f'Total sum of stock: {int(returnSum(stock))*int(returnSum(prices))}')
 
+    total = 0
+    for key in prices:
+        value = prices[key] * stock[key]
+        total = total + value
+    print(f'Total sum of stock: {int(total)}')
 
-    ###Task 3
+###Task 3
     ###List comprehension exercise
     ###Use a list comprehension to make a list containing tuples (i, j)
     ###where `i` goes from 1 to 10 and `j` is corresponding to `i` squared.
