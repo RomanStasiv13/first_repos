@@ -35,7 +35,7 @@ def make_operation(operator,*args):
     - for substraction
     * for multiplication
     ''')
-    args=input('Enter the arguments divided by a backspace').split()
+    args=input('Enter the arguments divided by a space').split()
     count=0
     calc=0
     for num in args:
