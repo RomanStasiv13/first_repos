@@ -5,9 +5,7 @@ if __name__ == '__main__':
     sentence = input('')
     new_dict ={}
     for word in set(sentence.lower().split()):
-        if word not in new_dict:
-            new_dict[word] = 1
-        else: new_dict[word] +=1
+       new_dict[word] = 1
     print(new_dict)
 
 
@@ -39,5 +37,5 @@ if __name__ == '__main__':
     ###Use a list comprehension to make a list containing tuples (i, j)
     ###where `i` goes from 1 to 10 and `j` is corresponding to `i` squared.
 
-    list_of_tuples=[(i,pow(i, 2)) for i in range(1,10) ]
+    list_of_tuples=[(i,pow(i, 2)) for i in range ]
     print(list_of_tuples)

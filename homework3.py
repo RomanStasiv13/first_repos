@@ -93,22 +93,29 @@ if __name__ == '__main__':
     ###если человек вводит 30 пишем ему "молодец" и заканчиваем игру.
     ###Если другое число - "ты можешь лучше" и загадываем новое х и новую формулу выбираем.
     import random
-    y = {1:'y=2x+3', 2:'y=3x+15', 3:'y=x+7'}
-    comp_choice = y[random.randint(1,3)]
-    x = random.randint(0,30)
-    print(f'Введите ответ {comp_choice}, x={x}')
-    answer=input(str(''))
-    if comp_choice==1:
-        2*x+3 == int(answer)
-        print('Молодец!')
-    elif comp_choice==2:
-        3*x+15 == int(answer)
-        print('Молодец!')
-    elif comp_choice==3:
-        x+7== int(answer)
-        print('Молодец!')
-    else:
+     y = {1:'y=2x+3', 2:'y=3x+15', 3:'y=x+7'}
+     comp_choice = y[random.randint(1,3)]
+
+     x = random.randint(0,30)
+     print(f'Введите ответ {comp_choice}, x={x}')
+     answer=input(str(''))
+      if comp_choice==1:
+         if 2*x+3 == int(answer)
+           print('Молодец!')
+      elif comp_choice==2:
+        if 3*x+15 == int(answer):
+           print('Молодец!')
+      elif comp_choice==3:
+        if x+7 == int(answer)
+          print('Молодец!')
+      else:
         print('Ты можешь лучше!')
+
+    ###combinations из модуля itertools
+    ###Получите от пользователя слово длинной больше 5 символов (проверка , цикл пока не введет правильное).
+    ###Сгенерируйте и выведите 5 комбинаций которые можно получить переставив буквы в слове (random.choice, pop, while)
+
+    import intertools
 
 
 
