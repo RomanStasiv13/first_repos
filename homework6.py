@@ -41,8 +41,7 @@ def make_operation(operator,*args):
     for num in args:
         count+=1
         question=str(num.strip())
-        if operator!='+' or operator!='-' or operator!='*':
-            print('Enter valid operator: + or - or *')
+
         if question[0]=='-':
             question=question[1:]
         if not question.isdigit():
@@ -57,7 +56,7 @@ def make_operation(operator,*args):
         elif operator=='*'and count>1 :
             calc*=int(num)
 
-        print(calc)
+    print(calc)
 if __name__ == '__main__':
 
     calculator = make_operation(input('Press enter'))
