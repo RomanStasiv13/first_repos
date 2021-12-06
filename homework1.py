@@ -113,7 +113,7 @@ b = c
 print(a)
 print(b)
 
-assert a==55 and b==10, "Не поменялось. :("
+assert a==55 and b==10, "Не поменялось.:("
 
 ###Homework from LMS
 
