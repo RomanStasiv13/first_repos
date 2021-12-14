@@ -46,7 +46,7 @@ CHANNELS = ["BBC", "Discovery", "TV1000"]
 class TVController:
 
     def __init__(self, channel_names):
-        self.channel_names = channel_names
+        self.channel_names = channel_names[:]
         self.ch_index = 0
 
     def first_channel(self):
