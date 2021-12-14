@@ -137,16 +137,16 @@ class SymbolA:
 
 if __name__ == '__main__':
     a = SymbolA('@')
-    a.line(0) == " @@@"
-    a.line(1) == "@  @"
-    a.line(2) == "@@@@"
-    a.line(3) == "@  @"
+    a.line(0)
+    a.line(1)
+    a.line(2)
+    a.line(3)
 
     a2 = SymbolA('$')
-    a2.line(0) == " $$$"
-    a2.line(1) == "$  $"
-    a2.line(2) == "$$$$"
-    a2.line(3) == "$  $"
+    a2.line(0)
+    a2.line(1)
+    a2.line(2)
+    a2.line(3)
 
 
 
