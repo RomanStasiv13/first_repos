@@ -160,3 +160,16 @@ if __name__ == '__main__':
     s2.get_all_products()
     s.get_income()
     s2.get_income()
+
+
+# Task 4
+# Custom exception
+# Create your custom exception named `CustomException`, you can inherit from base Exception class,
+# but extend its functionality to log every error message to a file named `logs.txt`.
+# Tips: Use __init__ method to extend functionality for saving messages to file
+
+class CustomException(Exception):
+    def __init__(self,msg):
+        pass
+
+# не дуже зрозумів завдання)
