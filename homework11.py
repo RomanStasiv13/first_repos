@@ -157,8 +157,4 @@ if __name__ == '__main__':
     print(l.group_by_author("Edgar Allan Poe"))
     print(l.display_book_amount())
 
-# Task 3
-# Fraction
-# Create a Fraction class, which will represent all basic arithmetic logic for fractions
-# (+, -, /, *) with appropriate checking and error handling.
 
