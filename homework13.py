@@ -1,6 +1,8 @@
 # Task 1
 # Write a decorator that prints a function with arguments passed to it.
 # NOTE! It should print the function, not the result of its execution!
+from functools import wraps
+
 
 def logger(func):
     def wrapper(*args,**kwargs):
@@ -33,8 +35,9 @@ print(f2)
 
 def stop_words(words: list):
     def func_slogan(func):
-        def wrapper(*args):
-            func_str = func(*args)
+        @wraps(func)
+        def wrapper(*args,**kwargs):
+            func_str = func(*args,*kwargs)
             for word in words:
                 func_str = func_str.replace(word, "*")
             return func_str
@@ -63,6 +66,7 @@ assert create_slogan("Steve") == "Steve drinks * in his brand new *!"
 
 def arg_rules(type_: type, max_length: int, contains: list):
     def func_slogan(func):
+        @wraps(func)
         def wrapper(name):
             f = func(name)
             if len(name) > max_length:
