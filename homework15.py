@@ -40,32 +40,30 @@ for i in ran2:
 # which could be used inside for-in loop. Also, add logic for retrieving elements using square brackets syntax.
 
 class Iter:
-    def __init__(self, val, times):
-        self.__data = val
-        self.__index = -1
-        self.__times = times
+    def __init__(self, data):
+        self.__data = data
+        self.__index = 0
 
     def __iter__(self):
-        self.__index = 0
         return self
 
     def __next__(self):
-        if self.__index >= len(self.__data):
-            self.__times -= 1
-            if self.__times == 0:
-                raise StopIteration
-            self.__index = 0
-        current_data = self.__data[self.__index]
         self.__index += 1
-        return current_data
+        try:
+            return self.__data[self.__index - 1]
+        except IndexError:
+            self.__index = 0
+            raise StopIteration
 
     def __getitem__(self, item):
         return self.__data[item]
 
-l = Iter('qwerty', 3)
+
+
+
+l = Iter('qwerty')
 for i in l:
     print(i)
-
 
 
 
