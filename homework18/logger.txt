@@ -1,0 +1,12 @@
+Opened: hw_18_file.txt with mode: w at 20:58:18.024964.
+Closed: hw_18_file.txt at 20:58:18.024964 (File was opened 1 times).
+Opened: hw_18_file.txt with mode: w at 20:58:21.141818.
+Closed: hw_18_file.txt at 20:58:21.141818 (File was opened 1 times).
+Opened: hw_18_file.txt with mode: w at 20:58:21.142783.
+Closed: hw_18_file.txt at 20:58:21.142783 (File was opened 2 times).
+Opened: hw_18_file.txt with mode: w at 20:58:21.142783.
+Closed: hw_18_file.txt at 20:58:21.142783 (File was opened 3 times).
+Opened: logger.txt with mode: r at 20:58:21.148768.
+Closed: logger.txt at 20:58:21.148768 (File was opened 4 times).
+Opened: logger.txt with mode: r at 20:58:21.152757.
+Closed: logger.txt at 20:58:21.152757 (File was opened 5 times).
