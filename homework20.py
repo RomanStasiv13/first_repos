@@ -11,7 +11,7 @@
 # 	for _ in range(10):
 # 		n **= 3
 # 	return n
-### ANSWER FOR QUESTION 3 : O(1) ###
+### ANSWER FOR QUESTION 2 : O(1) ###
 
 
 # def question3(first_list: List[int], second_list: List[int])-> List[int]:
