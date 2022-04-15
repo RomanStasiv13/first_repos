@@ -32,7 +32,7 @@ class PizzasList:
         for one_block in main_div_list:
             name = one_block.find('div', class_='cipollino-product-name').text.strip()
             description = one_block.find('div', class_='cipollino-product-ingredients').text.strip()
-            image = one_block.find('div', class_='cipollino-product-ingredients').text.strip()
+            image = one_block.find('img').attrs['data-src']
             options_list = one_block.find_all('div', class_='cipollino-product-option')
             pizzas_vars = []
             for variant in options_list:
@@ -49,6 +49,8 @@ class PizzasList:
         if self.pizza_list:
             return self.pizza_list.pop()
         raise StopIteration
+
+
 
 
 if __name__ == '__main__':
